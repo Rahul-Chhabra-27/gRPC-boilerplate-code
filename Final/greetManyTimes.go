@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	greetpb "grpc-dev/proto/greet"
 	"strconv"
 	"time"
@@ -8,6 +9,7 @@ import (
 
 func (*GreetService) GreetManyTimes(req *greetpb.GreetManyTimesRequest, stream greetpb.GreetService_GreetManyTimesServer) error {
 
+	fmt.Println("GreetManyTimes function was invoked with a request", req)
 	// Get the first name from the client request
 	firstName := req.GetGreeting().GetFirstName()
 	lastName := req.GetGreeting().GetLastName()
