@@ -15,32 +15,32 @@ func GreetEveryone(c greetpb.GreetServiceClient) {
 	requests := []*greetpb.GreetEveryoneRequest{
 		&greetpb.GreetEveryoneRequest{
 			Greeting: &greetpb.Greeting{
+				FirstName: "Stuart",
+				LastName:  "Broad",
+			},
+		},
+		&greetpb.GreetEveryoneRequest{
+			Greeting: &greetpb.Greeting{
+				FirstName: "Paul",
+				LastName:  "Collingwood",
+			},
+		},
+		&greetpb.GreetEveryoneRequest{
+			Greeting: &greetpb.Greeting{
 				FirstName: "Ben",
-				LastName:  "Sooraj",
+				LastName:  "Stokes",
 			},
 		},
 		&greetpb.GreetEveryoneRequest{
 			Greeting: &greetpb.Greeting{
-				FirstName: "Hannah",
-				LastName:  "Angeline",
+				FirstName: "Ben",
+				LastName:  "Foakes",
 			},
 		},
 		&greetpb.GreetEveryoneRequest{
 			Greeting: &greetpb.Greeting{
-				FirstName: "Saasha Mehr",
-				LastName:  "Sooraj",
-			},
-		},
-		&greetpb.GreetEveryoneRequest{
-			Greeting: &greetpb.Greeting{
-				FirstName: "Surya",
-				LastName:  "Mohan",
-			},
-		},
-		&greetpb.GreetEveryoneRequest{
-			Greeting: &greetpb.Greeting{
-				FirstName: "Eunice",
-				LastName:  "Keren",
+				FirstName: "Mark",
+				LastName:  "Wood",
 			},
 		},
 	}

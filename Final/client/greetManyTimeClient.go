@@ -13,8 +13,8 @@ func GreetManyTimes(c greetpb.GreetServiceClient) {
 
 	req := &greetpb.GreetManyTimesRequest{
 		Greeting: &greetpb.Greeting{
-			FirstName: "Ben",
-			LastName:  "Sooraj",
+			FirstName: "John",
+			LastName:  "Doe",
 		},
 	}
 

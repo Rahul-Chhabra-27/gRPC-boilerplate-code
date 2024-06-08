@@ -14,8 +14,8 @@ func Greet(c greetpb.GreetServiceClient) {
 	// Create a GreetRequest
 	req := &greetpb.GreetRequest{
 		Greeting: &greetpb.Greeting{
-			FirstName: "Rahul",
-			LastName:  "Chhabra",
+			FirstName: "Ben",
+			LastName:  "Stokes",
 		},
 	}
 	
